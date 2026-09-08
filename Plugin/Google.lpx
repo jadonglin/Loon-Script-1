@@ -2,12 +2,11 @@
 #!desc = Google搜索中国、香港、日本重定向
 #!author = Tartarus
 #!system = iOS,iPadOS,tvOS,macOS
-#!system_version = 
-#!loon_version = 3.3.2(877)
+#!loon_version = 3.5.1(984)
 #!icon = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google.png
 
 [Rewrite]
-^https?:\/\/www\.google\.(?:cn|co\.jp|com\.hk)(?:\/(.*))?$ 302 https://www.google.com/$1
+request if ${url} ~= /^https?:\/\/www\.google\.(?:cn|co\.jp|com\.hk)(?:\/(.*))?$/i as urlMatch then redirect(302, "https://www.google.com/${urlMatch.1}")
 
 [MITM]
 hostname = *.google.com.hk, *.google.cn, *.google.co.jp
