@@ -1,7 +1,7 @@
 #!name = 红果短剧广告拦截
 #!desc = 拦截红果短剧及字节系相关广告请求，同时直连内容服务器避免加载异常
 #!system = iOS,iPadOS
-#!loon_version = 3.5.1(984)
+#!loon_version = 3.5.0(975)
 #!icon = https://hongguo.com/favicon.ico
 
 
