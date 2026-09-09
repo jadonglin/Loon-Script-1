@@ -1,5 +1,6 @@
 #!name=iTunes系列解锁
 #!desc=自动查询 App 内购产品并注入最贵套餐凭证，可在设置中关闭。
+#!author = Baby
 #!tag=通杀脚本
 #!icon=https://raw.githubusercontent.com/fishdown/Icon/refs/heads/master/app/RevenueCat.png
 
